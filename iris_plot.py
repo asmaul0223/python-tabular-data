@@ -34,3 +34,13 @@ def plot_species(dataframe, species):
 
     plt.savefig(f"{species}.png")
     plt.close()
+ 
+def main():
+    dataframe = pd.read_csv("iris.csv")
+
+    for species in dataframe.species.unique():
+        plot_species(dataframe, species)
+
+
+if __name__ == "__main__":
+    main()
