@@ -34,4 +34,3 @@ def plot_species(dataframe, species):
 
     plt.savefig(f"{species}.png")
     plt.close()
-
